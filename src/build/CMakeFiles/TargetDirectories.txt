@@ -1,0 +1,4 @@
+/Users/vruiz/P2PSP/core/build/CMakeFiles/test.dir
+/Users/vruiz/P2PSP/core/build/CMakeFiles/rebuild_cache.dir
+/Users/vruiz/P2PSP/core/build/CMakeFiles/edit_cache.dir
+/Users/vruiz/P2PSP/core/build/CMakeFiles/p2psp.dir
