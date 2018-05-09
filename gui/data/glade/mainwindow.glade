@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Generated with glade 3.18.3 -->
 <interface>
-  <requires lib="gtk+" version="3.0"/>
+  <requires lib="gtk+" version="3.6"/>
   <object class="GtkMenu" id="ChannelPopupMenu">
     <property name="visible">True</property>
     <property name="can_focus">False</property>
@@ -80,6 +80,12 @@
     <property name="can_focus">False</property>
     <property name="stock">gtk-missing-image</property>
   </object>
+  <object class="GtkImage" id="image3">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="xalign">0.47999998927116394</property>
+    <property name="pixbuf">ic_cast_white_24dp.png</property>
+  </object>
   <object class="GtkApplicationWindow" id="MainWindow">
     <property name="can_focus">True</property>
     <property name="title" translatable="yes">P2PSP</property>
@@ -97,6 +103,7 @@
               <object class="GtkMenuBar" id="Menu">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
+                <property name="halign">baseline</property>
                 <child>
                   <object class="GtkMenuItem" id="File">
                     <property name="visible">True</property>
@@ -165,6 +172,30 @@
                             <property name="active">True</property>
                             <property name="draw_as_radio">True</property>
                             <signal name="toggled" handler="on_ViewPlayerStatusBox_toggled" swapped="no"/>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkMenuItem" id="Stream">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="label" translatable="yes">Stream</property>
+                    <child type="submenu">
+                      <object class="GtkMenu" id="Streamingoptionsmenu">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <child>
+                          <object class="GtkImageMenuItem" id="Cast">
+                            <property name="label" translatable="yes">cast to..</property>
+                            <property name="visible">True</property>
+                            <property name="can_focus">False</property>
+                            <property name="image">image3</property>
+                            <property name="use_stock">False</property>
+                            <property name="always_show_image">True</property>
+                            <signal name="activate" handler="on_Cast_activate" swapped="no"/>
                           </object>
                         </child>
                       </object>
